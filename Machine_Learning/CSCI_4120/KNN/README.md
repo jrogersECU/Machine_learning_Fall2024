@@ -23,8 +23,7 @@ pip install pandas scikit-learn matplotlib numpy
 # Running the Code
 ## 1. Clone the Repository
 ```bash
-git clone https://github.com/[your-repo]/knn-project.git
-cd knn-project
+git clone https://github.com/ruiwu1990/CSCI_4120
 ```
 ## 2. Run the knn.py file
 ```bash 
