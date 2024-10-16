@@ -27,3 +27,18 @@ In this exercise, we add a new column `"y-x"` to the DataFrame, where the value 
 ```python
 def y_minus_x(HW):
     HW['y-x'] = HW['y'] - HW['x']
+## Exercise 2: Simple Linear Regression
+
+In this exercise, we perform a linear regression to estimate the weights \( w_0 \) and \( w_1 \) for the equation:
+
+\[ y - x = w_0 + w_1 \cdot x \]
+
+- **Function**: `do_regression(HW)`
+- **Output**: Numpy array containing the regression coefficients \( w_0 \) and \( w_1 \).
+
+```python
+def do_regression(HW):
+    x = np.vstack([np.ones(HW.shape[0]), HW['x']]).T
+    Y = HW['y-x']
+    w, _, _, _ = np.linalg.lstsq(x, Y, rcond=None)
+    return w
