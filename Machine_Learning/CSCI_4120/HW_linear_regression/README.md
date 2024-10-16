@@ -44,3 +44,16 @@ def do_regression(HW):
     w, _, _, _ = np.linalg.lstsq(x, Y, rcond=None)
     return w
 ```
+
+### Output Graph for Exercise 1:
+
+This scatter plot visualizes the values of `x` vs `y - x`.
+
+![output1](output1.png)
+
+### Output Graph for Exercise 2:
+
+This plot shows the scatter plot of `x` vs `y - x` with the linear regression line overlaid.
+
+![output2](output2.png)
+
