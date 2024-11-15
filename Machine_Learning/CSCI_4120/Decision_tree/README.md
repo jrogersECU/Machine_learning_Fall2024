@@ -62,10 +62,6 @@ accuracy_per_feature = avg_accuracy / X_selected.shape[1]
 print("Average Accuracy:", avg_accuracy)
 print("Accuracy per Feature:", accuracy_per_feature)
 ```
-## Output Graphs
-![output1](output1.png)
-![outpu2](output2.png)
-
 ## Model Performance
 ### Results
 - Average Accuracy: 94.3%
