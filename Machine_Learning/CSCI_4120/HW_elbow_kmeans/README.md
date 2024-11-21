@@ -13,6 +13,7 @@ To run this project, you need to have the following dependencies installed:
 - Scikit-learn
 - Matplotlib
 - Yellowbrick
+- SciPy
 
 You can install the required dependencies using pip:
 
@@ -62,13 +63,10 @@ sudo apt --fix-broken install (if needed)
 
 
 ## K Value Selection
-Using the **KElbowVisualizer**, the best value for K was determined to be: 3.
+Using the **KElbowVisualizer**, the best value for K was determined to be: 4.
 
 ## Elbow Method Graph
-![Elbow Method](./Figure%201.png)
-
-![Confusion Matrix](./confusion_matrix.png)
-
+![Elbow Method](./elbow.png)
 
 ## Example Output
 
@@ -78,11 +76,20 @@ Using the **KElbowVisualizer**, the best value for K was determined to be: 3.
 2. **Accuracy**:
    The script will print the accuracy score for the best K:
    ```
-   Accuracy for best K (3): 0.24666666666666667
+   Accuracy for best K (4): 1.00
    ```
 
 3. **Confusion Matrix**:
    A K x K confusion matrix will be displayed after clustering.
+
+   |   | Cluster 0 | Cluster 1 | Cluster 2 | Cluster 3 |
+   |---|-----------|-----------|-----------|-----------|
+   | **True 0** | 75 | 0 | 0 | 0 |
+   | **True 1** | 0 | 75 | 0 | 0 |
+   | **True 2** | 0 | 0 | 75 | 0 |
+   | **True 3** | 0 | 0 | 0 | 75 |
+
+   ![Confusion Matrix](./confusion.png)
 
 ## Team Members
 
